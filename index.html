@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6E7RJD8L6J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-6E7RJD8L6J');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Learn to read a new writing system | love alphabets</title>
+    <link rel="stylesheet" href="_global/css/normalize.css" />
+    <link rel="stylesheet" href="_global/css/layout.css" />
+    <link rel="stylesheet" href="_global/css/onboarding.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rochester&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      .home-language-icon {
+          font-size: 61px;
+          width: 100%;
+          font-weight: 700;
+          text-transform: uppercase;
+      }
+
+      .language-heading {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 0;
+          display: flex;
+      }
+
+      .heading-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 6px 0;
+          align-items: center;
+          background-color: #fff;
+      }
+
+      .language-status {
+          font-size: 13px;
+          margin-top: -2px;
+      }
+
+      .language-status.due {
+          color: #e6126b;
+          font-weight: bold;
+          text-decoration: underline;
+      }
+
+      .language-status.completed {
+          color: #3bce97;
+      }
+
+      .home-language:hover .card-overlay {
+          opacity: 1;
+      }
+
+      .card-overlay {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          position: absolute;
+          transition: all 0.5s;
+          background: rgba(24, 9, 62, 1);
+          align-items: center;
+          justify-content: space-around;
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          font-weight: bold;
+      }
+
+      .home-language-card {
+          position: relative;
+          box-sizing: border-box;
+      }
+
+      .home-cta {
+          color: white;
+          text-transform: uppercase;
+          font-size: 11px;
+          letter-spacing: 1px;
+          height: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+      }
+
+      .separator {
+          width: 100%;
+          height: 2%;
+          border-top: 1px #cdcad5 solid;
+      }
+
+      .home-cta-box {
+          color: #fff;
+      }
+
+      .home-cta.top-cta {
+          background-color: #cebdff;
+          color: #18093e;
+      }
+
+      }
+    </style>
+  </head>
+
+  <body style="overflow-y: auto; overflow-x: hidden">
+    <div class="home-container">
+      <header class="header main-background logo">
+        <logo class="top-nav">
+          <p class="logo-text">love alphabets</p>
+        </logo>
+      </header>
+      <section class="home-wrapper">
+        <div class="home">
+          <article class="home-language">
+            <a href="amharic/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ለ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                     <svg id="amharic-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Amharic
+                </div>
+                <div id="amharic" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="arabic/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ت</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="arabic-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Arabic
+                </div>
+                <div id="arabic" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="armenian/">
+              <div class="home-language-card">
+                <span class="home-language-icon">Թ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="armenian-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Armenian (Eastern)
+                </div>
+                <div id="armenian" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="bengali/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ও</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="bengali-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Bengali
+                </div>
+                <div id="bengali" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="cherokee/">
+              <div class="home-language-card">
+                <span class="home-language-icon">Ꮬ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="cherokee-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Cherokee
+                </div>
+                <div id="cherokee" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <!-- <article class="home-language">
+                    <a href="chinese/">
+                        <div class="home-language-card">
+                            <span class="home-language-icon">我</span>
+                        </div>
+                        <div class="heading-content">
+                            <div class="language-heading">
+                                <span>
+                                    <svg id="chinese-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span>
+                                Chinese Hanzi</div>
+                            <div id="chinese" class="language-status"></div>
+                        </div>
+                    </a>
+                </article> -->
+          <article class="home-language">
+            <a href="georgian/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ბ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="georgian-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Georgian
+                </div>
+                <div id="georgian" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="greek/">
+              <div class="home-language-card">
+                <span class="home-language-icon">Ξ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="greek-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Greek
+                </div>
+                <div id="greek" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="hindi/">
+              <div class="home-language-card">
+                <span class="home-language-icon" style="margin-top: 10px">ई</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="hindi-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Hindi
+                </div>
+                <div id="hindi" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="inuktitut/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ᐄ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="inuktitut-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Inuktitut
+                </div>
+                <div id="inuktitut" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="japanese/">
+              <div class="home-language-card">
+                <span class="home-language-icon">な</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="japanese-hiragana-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Japanese
+                </div>
+                <div id="japanese" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="korean/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ㅎ</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="korean-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Korean
+                </div>
+                <div id="korean" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="mandarin/">
+              <div class="home-language-card">
+                <span class="home-language-icon">官话</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  Mandarin
+                </div>
+                <div id="mandarin" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="norwegian/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ø</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  Norwegian
+                </div>
+                <div id="norwegian" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="russian/">
+              <div class="home-language-card">
+                <span class="home-language-icon">Д</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="russian-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Russian
+                </div>
+                <div id="russian" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <article class="home-language">
+            <a href="tibetan/">
+              <div class="home-language-card">
+                <span class="home-language-icon">ང</span>
+              </div>
+              <div class="heading-content">
+                <div class="language-heading">
+                  <!-- <span>
+                                    <svg id="tibetan-favourite" class="favourite" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
+                                </span> -->
+                  Tibetan
+                </div>
+                <div id="tibetan" class="language-status"></div>
+              </div>
+            </a>
+          </article>
+          <!-- <div id="overlay">
+            <div class="loader"></div>
+        </div> -->
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">© 2021 love alphabets. All rights reserved.</div>
+        <div class="footer-email">hello@lovealphabets.com</div>
+      </footer>
+    </div>
+    <script>
+      function playAudio(url) {
+        new Audio(url).play();
+      }
+
+      /*
+
+        let now = new Date();
+        //let todaysDate = now.toJSON().slice(0,10).replace(/-/g,'/');
+        //let todaysDate = "2022/03/27"
+        let startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+        //let startOfDay = new Date('2021/05/30').getTime();
+        let endOfDay = startOfDay + (24 * 60 * 60 * 1000) - 1;
+
+        let languageStatusCollection = document.querySelectorAll(".language-status");
+        let languageStatusArray = [...languageStatusCollection].map(item => item = item.id);
+
+        languageStatusArray.forEach(language => {
+
+            let languageNextDate = [];
+
+            for (item in localStorage) {
+                if (item.includes(language) && item.includes("NextDate")) {
+                    languageNextDate.push(localStorage[item]);
+                }
+            }
+
+            console.log(languageNextDate);
+
+            let nextDate = languageNextDate.length == 0 ? undefined : Math.min(...languageNextDate)
+
+
+            let scriptStatus = document.getElementById(language);
+
+            if (!nextDate) {
+                scriptStatus.innerHTML = "";
+
+            } else if (nextDate <= endOfDay) {
+                scriptStatus.innerHTML = "due";
+                scriptStatus.classList.add("due");
+
+            } else {
+                scriptStatus.innerHTML = "done";
+                scriptStatus.classList.add("done");
+            }
+
+            console.log(nextDate);
+
+
+        })
+
+        const favourite = document.querySelectorAll('.favourite');
+        let favouritesArr = [];
+
+        // Go through favourites items in local storage
+        // Add favourited class
+        if ("favourites" in localStorage) {
+            favouritesArrLoad = JSON.parse(localStorage.getItem("favourites"));
+            favouritesArrLoad.forEach(item => document.getElementById(item).classList.add('favourited'))
+        }
+
+        // Event listeners
+        for (heart of favourite) {
+            heart.addEventListener("click", function(e) {
+                let clickedEl = e.target;
+                console.log(clickedEl.id)
+
+                if (clickedEl && clickedEl.nodeName == "path") {
+
+                    let parentId = e.target.parentNode.id;
+                    let parentClassArr = [...e.target.parentNode.classList];
+                    console.log(parentClassArr);
+
+                    // If .favourited is NOT already active
+                    // Add it and save it in local storage
+                    if (!parentClassArr.includes("favourited")) {
+
+                        clickedEl.parentNode.classList.add('favourited');
+
+                        if ("favourites" in localStorage) {
+                            favouritesArr = JSON.parse(localStorage.getItem("favourites"));
+                            if (!favouritesArr.includes(parentId)) {
+                                favouritesArr.push(parentId)
+                                console.log(favouritesArr);
+                            }
+                        } else {
+                            favouritesArr = [parentId];
+
+                        }
+                        localStorage.setItem("favourites", JSON.stringify(favouritesArr));
+                    }
+
+                    // If .favourited already on, remove it
+                    // Save in local storage
+                    else {
+
+                        clickedEl.parentNode.classList.remove('favourited');
+
+
+                        if ("favourites" in localStorage) {
+                            favouritesArr = JSON.parse(localStorage.getItem("favourites"));
+                            filteredFavouritesArr = favouritesArr.filter(item => item !== parentId)
+                            console.log(filteredFavouritesArr);
+
+                        } else {
+                            filteredFavouritesArr = [];
+                        }
+
+                        localStorage.setItem("favourites", JSON.stringify(filteredFavouritesArr));
+
+                    }
+                }
+            })
+        }
+        */
+    </script>
+  </body>
+</html>
